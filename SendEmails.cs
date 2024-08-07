@@ -39,4 +39,5 @@ public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anon
         log.LogError($"Sending email operation failed with error code: {ex.ErrorCode}, message: {ex.Message}");
         return new ConflictObjectResult("Error sending email");
     }
+    //hello
 }
